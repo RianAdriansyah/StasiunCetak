@@ -1,13 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 .jumbotron {
   background-color: #d9e9d4;
   padding-top: 6rem;
 }
 .navbar {
   background-color: #5faa45;
+  background: linear-gradient(#5faa45, #d9e9d4);
+  font-family: 'Montserrat', sans-serif;
 }
 #product {
   background-color: #d9e9d4;
 }
 section {
   padding-top: 5rem;
+}
+h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navlinks li a {
+  margin: 0px 20px 0px 0px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s linear 0s;
+  text-transform: uppercase;
+}
+li a:hover {
+  background-color: #d9e9d4;
+  padding: 7px 15px;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+}
+
+.marketplace img {
+  filter: drop-shadow(0.5px 0.5px 0.5px rgba(0, 0, 0, 0.8));
 }

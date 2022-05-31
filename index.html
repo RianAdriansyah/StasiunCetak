@@ -13,26 +13,30 @@
 
     <title>Stasiun Cetak</title>
   </head>
+
+  <!-- NAVBAR -->
+
   <body id="home">
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light" id="navbar">
       <div class="container">
-        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <img src="logo/stcetak.png" alt="" width="30" height="24" class="d-inline-block align-text-top" />
+        <a class="navbar-brand" href="#home"> Stasiun Cetak</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav text-uppercase ms-auto navlinks">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Beranda</a>
+              <a class="nav-link active" aria-current="page" href="#home" id="homeli">Beranda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">Tentang</a>
+              <a class="nav-link" href="#about" id="aboutli">Tentang</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#product">Produk</a>
+              <a class="nav-link" href="#product" id="productli">Produk</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Kontak</a>
+              <a class="nav-link" href="#contact" id="contactli">Kontak</a>
             </li>
           </ul>
         </div>
@@ -45,7 +49,7 @@
       <div class="container-fluid">
         <div class="row mt-2">
           <div class="col-lg-3 offset-1">
-            <img src="stcetak.png" alt="" id="gambar" width="100%" class="rounded float-start" />
+            <img src="logo/stcetak.png" alt="stasiuncetak" id="gambar" width="90%" class="rounded float-center" />
           </div>
           <div class="col-lg-6">
             <h2>Stasiun Cetak</h2>
@@ -59,6 +63,18 @@
               </blockquote>
               <figcaption class="blockquote-footer">From <cite title="Source Title">Hadist</cite></figcaption>
             </figure>
+            <h6 class="mt-5">Temukan produk kami</h6>
+            <div class="marketplace mt-3 d-flex justify-content-between">
+              <a href="https://www.tokopedia.com/stasiuncetak" target="_blank">
+                <img src="logo/tokopedia.png" class="img-fluid" alt="Tokopedia" style="width: 25vh" />
+              </a>
+              <a href="https://shopee.co.id/stasiuncetak" target="_blank">
+                <img src="logo/shopee.png" class="img-fluid" alt="Shopee" style="width: 25vh" />
+              </a>
+              <a href="https://www.bukalapak.com/u/stasiuncetak" target="_blank">
+                <img src="logo/bukalapak.png" class="img-fluid" alt="bukalapak" style="width: 25vh" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -79,7 +95,7 @@
           <div class="col-lg text-center">
             <h2>Tentang Kami</h2>
           </div>
-          <div class="row justify-content-center text-start fs-5">
+          <div class="row justify-content-center text-start fs-5 mt-2">
             <div class="col-lg-5">
               <p>Selamat datang di Stasiun Cetak! Kami spesialis Produksi Buku Yasin, Undangan, dan Paperbag. Berdiri sejak 2017 dan merupakan percetakan rintisan keluarga.</p>
             </div>
@@ -111,11 +127,11 @@
 
     <section id="product">
       <div class="container">
-        <div class="row text-center">
+        <div class="row text-center justify-content-center">
           <div class="col">
             <h2>Produk</h2>
           </div>
-          <div class="row justify-content-center">
+          <div class="row justify-content-center mt-2">
             <div class="col-lg-4 mb-3">
               <div class="card">
                 <img src="fotoproduk/undangan.jpg" class="card-img-top rounded bi-border-all" />
@@ -173,10 +189,10 @@
     <section id="contact">
       <div class="container">
         <div class="row">
-          <h2 class="text-center mb-2">Kontak Kami</h2>
+          <h2 class="text-center mb-4">Kontak Kami</h2>
           <div class="col-lg-5">
             <div class="card" style="background-color: #d9e9d4">
-              <div class="card-body text-center" style="height: 15rem">
+              <div class="card-body text-center" style="height: 50%">
                 <div class="row justify-content-center mb-2">
                   <div class="col-lg-6">
                     <h5 class="card-title"><i class="bi bi-envelope" style="font-size: 10vh"></i></h5>
@@ -192,13 +208,13 @@
                 <p class="card-text mt-4">Silahkan hubungi kami untuk info lebih lanjut.</p>
               </div>
             </div>
-            <div class="card mt-3">
+            <div class="card mt-3 mb-3">
               <ul class="list-group list-group-flush">
                 <li class="list-group-item fs-3">Alamat Kami</li>
                 <li class="list-group-item">Kp. Cangkuang Mekar</li>
                 <li class="list-group-item">RT.02/15 Ds. Cangkuang Kulon</li>
-                <li class="list-group-item">Kab. Bandung, Jawa Barat</li>
                 <li class="list-group-item">Depan Blok GC 1A</li>
+                <li class="list-group-item">Kab. Bandung, Jawa Barat</li>
               </ul>
             </div>
           </div>
@@ -239,7 +255,7 @@
     </section>
 
     <footer class="text-white text-center p-3" style="background-color: #5faa45">
-      <p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://www.instagram.com/rianad01/" target="_blank" class="text-white fw-bold">Rian Adriansyah</a></p>
+      <p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://www.instagram.com/stasiuncetak/" target="_blank" class="text-white fw-bold">Stasiun Cetak</a></p>
     </footer>
 
     <!-- Optional JavaScript; choose one of the two! -->
