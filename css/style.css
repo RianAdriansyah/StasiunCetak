@@ -33,6 +33,12 @@ li a:hover {
   transition: all 0.3s ease 0s;
 }
 
-.marketplace img {
-  filter: drop-shadow(0.5px 0.5px 0.5px rgba(0, 0, 0, 0.8));
+::-webkit-scrollbar {
+  width: 11px;
+}
+::-webkit-scrollbar-track {
+  background: #dddddd;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#5faa45, #d9e9d4);
 }
